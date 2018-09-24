@@ -1,33 +1,61 @@
 .banner {
-  background-image: image("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  height: 31rem;
+  width: 100%;
   background-size: cover;
-  height: 30rem;
+  position: relative;
+  bottom: 3.5rem;
 }
 
 .blocks {
   display: flex;
+  justify-content: center;
 }
 
-.footer {
+.custom img, .delivery img {
+  width: 5rem;
+}
+
+footer {
   background-color: azure;
   height: 9.5rem;
-  margin-top: 5rem;
+  display: flex;
+  align-items: center;
 }
 
-.footer img {
+footer img {
   height: 1.5rem;
-  margin: 4rem 1rem 4rem 4rem;
+  padding: 4rem 1rem 4rem 4rem;
 }
 
 h2 {
-  margin: 0.5rem 0 0.5rem 1.25rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
   width: 10rem;
   background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: white;
 }
 
 .header {
   background-color: cadetblue;
-  margin-top: 1rem;
+  top: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  z-index: 1;
+}
+
+.holder {
+  margin: 0 auto;
+  width: 960px;
 }
 
 html {
@@ -36,22 +64,168 @@ html {
   line-height: 1.4;
 }
 
-.philosophy, .appointments {
-  width: 35%;
+.list, .custom, .delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  margin-right: 6rem;
 }
 
-.pic {
+.list img {
+  width: 3.5rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.logo {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  }
+
+  nav span, nav p {
+    margin-right: 2rem;
+  }
+
+  nav p {
+    display: none;
+  }
+
+.philosophy, .appointments {
+  width: 35%;
+  margin-bottom: 5rem;
+}
+
+.philosophy {
+  margin-right: 5%;
+}
+
+.pics {
   height: 8rem;
   margin: 3rem 0;
-}
+  display: flex;
+  justify-content: center;
+ }
 
 .wbox {
   padding: 1.5rem 5rem;
   background-color: white;
   font-weight: bold;
+  position: relative;
+  /**top: 225px;**/
+  width: auto;
+  margin-right:
 }
 
 .wbox h1 {
   line-height: 1.2;
   font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    height: 22rem;
+    position: static;
+  }
+
+  .header {
+    top: 0;
+  }
+
+  .holder {
+    width: 100%;
+  }
+
+  .wbox {
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    /**top: 207px;**/
+    position: absolute;
+  }
+
+  .wbox h1 {
+    font-size: 1.33rem;
+    flex-wrap: nowrap;
+    width: auto;
+
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .blocks {
+    flex-direction: column;
+  }
+
+  .custom {
+    margin-bottom: 1.54rem;
+  }
+
+  footer img {
+    margin: 0 auto;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  .list h4, .custom h4, .delivery h4 {
+    font-size: 0.77rem;
+  }
+
+  .list {
+    margin-bottom: 1.54rem;
+  }
+
+  .logo h3 {
+    display: none;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  nav p {
+    display: block;
+  }
+
+  .philosophy, .appointments {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .philosophy h2, .appointments h2 {
+      width: 100%;
+    }
+
+  .philosophy p, .appointments p {
+    font-size: 0.77rem
+    }
+
+  .pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem auto;
+    height: auto;
+  }
+
+.wbox {
+  width: 100%;
+}
+
+
 }
