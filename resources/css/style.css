@@ -53,6 +53,13 @@ h3 {
   z-index: 1;
 }
 
+.helper {
+  margin: 0 auto;
+  width: 960px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .holder {
   margin: 0 auto;
   width: 960px;
@@ -122,10 +129,14 @@ nav {
   padding: 1.5rem 5rem;
   background-color: white;
   font-weight: bold;
-  position: relative;
+  /**position: relative;**/
+  /**top: 207px;**/
   /**top: 225px;**/
-  width: auto;
-  margin-right:
+  display: inline-block;
+  margin-top: 14.5rem;
+  margin-right: -2rem;
+
+
 }
 
 .wbox h1 {
@@ -145,7 +156,7 @@ nav {
     top: 0;
   }
 
-  .holder {
+  .holder, .helper {
     width: 100%;
   }
 
@@ -154,6 +165,7 @@ nav {
     padding: 0.75rem 4rem;
     /**top: 207px;**/
     position: absolute;
+    margin-right: 2rem;
   }
 
   .wbox h1 {
@@ -164,7 +176,11 @@ nav {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
+  .banner {
+    height: 17rem;
+    background-size: cover;
+  }
 
   .blocks {
     flex-direction: column;
@@ -188,6 +204,14 @@ nav {
 
   .list {
     margin-bottom: 1.54rem;
+  }
+
+  .list, .custom, .delivery {
+    margin-right: 0;
+  }
+
+  .list img, .custom img, .delivery img {
+    margin-bottom: 1rem;
   }
 
   .logo h3 {
@@ -225,7 +249,15 @@ nav {
 
 .wbox {
   width: 100%;
+  position: relative;
+  top: 9rem;
+  padding: 1rem auto;
+  margin-top: 0;
+  margin-right: 0;
 }
 
-
+.wbox h1 {
+  font-size: 1rem;
+  text-align: center;
+}
 }
