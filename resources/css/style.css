@@ -1,0 +1,34 @@
+.banner {
+  background-image: image("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+}
+
+.footer {
+  background-color: azure;
+  height: 9.5rem;
+  margin-top: 5rem;
+}
+
+.footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+h2 {
+
+}
+
+.header {
+  background-color: cadetblue;
+  margin-top: 1rem;
+}
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+.philosophy, .appointments {
+  width: 35%;
+}
